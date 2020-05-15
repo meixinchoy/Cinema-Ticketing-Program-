@@ -5,26 +5,26 @@
 #include <cstdlib>
 #include <cctype>
 #include <windows.h>
-	using namespace std;
+using namespace std;
 
-	//function headers
-	void header();
-	bool excessinputvalidation();
-	void datatypevalidation(int* sentinel);
-	void assignseatsnum(int seating[3][60]);
-	void showtime_details(string[3][3]);
-	int check_date(string showtimes[3][3], int &sentinel);
-	void ticketdetails(double ticketprices[3][3], int[3][3], int seatcap[3], int day);
-	int check_class(double ticketprices[3][3], int seatcount[3][3], int seatcap[3], int day);
-	int check_ticket(int &sentinel, int Class, int seatcount[3][3], int seatcap[3], int day);
-	void showseats(int Class, int seating[3][60], int* m, int* n, int day);
-	void seatselection(int Class, int num, int total, int seatschosen[30], int seating[3][60], int day);
-	void snackitems(double snacksprices[3][3]);
-	int snackselection(int, int &sentinel);
-	bool billing(int Class, double ticketprices[3][3], double snacksprices[2][3], int snackschosen[3], int NumAdult, int NumChild, int NumStudent, string promocode);
-	void ticketprinting(int total, int NumAdult, int NumChild, int NumStudent, int Class, string movie, string date, string time, int seatschosen[30], double ticketprices[3][3], int snackschosen[3], bool promo);
-	bool proceed();
-	void salesreport(string showtimes[3][3], int catseatcount[3][3][3], int seatcount[3][3], int seatcap[3], double ticketprices[3][3], int totalsnackschosen[3], double snacksprices[2][3], int totalpromo);
+//function headers
+void header();
+bool excessinputvalidation();
+void datatypevalidation(int* sentinel);
+void assignseatsnum(int seating[3][60]);
+void showtime_details(string[3][3]);
+int check_date(string showtimes[3][3], int &sentinel);
+void ticketdetails(double ticketprices[3][3], int[3][3], int seatcap[3], int day);
+int check_class(double ticketprices[3][3], int seatcount[3][3], int seatcap[3], int day);
+int check_ticket(int &sentinel, int Class, int seatcount[3][3], int seatcap[3], int day);
+void showseats(int Class, int seating[3][60], int* m, int* n, int day);
+void seatselection(int Class, int num, int total, int seatschosen[30], int seating[3][60], int day);
+void snackitems(double snacksprices[3][3]);
+int snackselection(int, int &sentinel);
+bool billing(int Class, double ticketprices[3][3], double snacksprices[2][3], int snackschosen[3], int NumAdult, int NumChild, int NumStudent, string promocode);
+void ticketprinting(int total, int NumAdult, int NumChild, int NumStudent, int Class, string movie, string date, string time, int seatschosen[30], double ticketprices[3][3], int snackschosen[3], bool promo);
+bool proceed();
+void salesreport(string showtimes[3][3], int catseatcount[3][3][3], int seatcount[3][3], int seatcap[3], double ticketprices[3][3], int totalsnackschosen[3], double snacksprices[2][3], int totalpromo);
 
 
 
